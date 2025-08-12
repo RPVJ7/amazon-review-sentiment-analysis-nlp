@@ -12,15 +12,15 @@ The goal is to compare the performance and contextual understanding of both mode
 
 # Dataset Description
 
-File: Reviews.csv
+**File**: Reviews.csv
 
 Contains thousands of Amazon customer reviews.
 
 Key columns:
 
-Text: The review content
+**Text**: The review content
 
-Score: Star rating (used for ground-truth sentiment where applicable)
+**Score**: Star rating (used for ground-truth sentiment where applicable)
 
 # Problem Statement
 
@@ -28,19 +28,19 @@ Can modern transformer-based models like RoBERTa offer more accurate and context
 
 # Methodology
 
-Preprocessing
+**Preprocessing**
 
 Cleaned text (lowercasing, removing special characters)
 
 Removed or retained stop words depending on model requirements
 
-Sentiment Modeling
+**Sentiment Modeling**
 
 VADER: Applied sentiment scoring (compound score → positive, neutral, negative)
 
 RoBERTa: Used cardiffnlp/twitter-roberta-base-sentiment from Hugging Face Transformers
 
-Comparative Evaluation
+**Comparative Evaluation**
 
 Converted predictions to common sentiment categories
 
@@ -48,7 +48,7 @@ Compared output distributions
 
 Manually inspected sample cases where models disagreed
 
-Visualization
+**Visualization**
 
 Sentiment distribution bar charts
 
